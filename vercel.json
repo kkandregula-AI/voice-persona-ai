@@ -1,4 +1,8 @@
 {
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "buildCommand": "pnpm --filter @workspace/mobile exec expo export --platform web --output-dir dist --clear"
+  "buildCommand": "pnpm --filter @workspace/mobile exec expo export --platform web --output-dir dist --clear",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
