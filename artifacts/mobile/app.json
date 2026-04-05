@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Voice Persona AI",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "mobile",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#050508"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Voice Persona AI needs microphone access to record your voice sample for persona generation.",
+        "NSSpeechRecognitionUsageDescription": "Voice Persona AI uses speech features to generate audio."
+      }
+    },
+    "android": {
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png",
+      "icon": "./assets/images/icon.png",
+      "name": "Voice Persona AI",
+      "shortName": "VoiceAI",
+      "description": "Transform any text into speech that mirrors your unique vocal style using AI. Record your voice, choose a persona mode, and generate natural-sounding speech.",
+      "themeColor": "#050508",
+      "backgroundColor": "#050508",
+      "display": "standalone",
+      "orientation": "portrait",
+      "scope": "/",
+      "startUrl": "/",
+      "splash": {
+        "image": "./assets/images/icon.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#050508"
+      },
+      "meta": {
+        "viewport": {
+          "content": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1.00001,viewport-fit=cover"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Voice Persona AI needs microphone access to record your voice sample."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
