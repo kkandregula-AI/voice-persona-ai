@@ -8,6 +8,9 @@
     "scheme": "mobile",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
+
+    "platforms": ["ios", "android", "web"],
+
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
@@ -26,8 +29,9 @@
       ]
     },
     "web": {
+      "bundler": "metro",
+      "output": "static",
       "favicon": "./assets/images/icon.png",
-      "icon": "./assets/images/icon.png",
       "name": "Voice Persona AI",
       "shortName": "VoiceAI",
       "description": "Transform any text into speech that mirrors your unique vocal style using AI. Record your voice, choose a persona mode, and generate natural-sounding speech.",
